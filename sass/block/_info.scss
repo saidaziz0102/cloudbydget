@@ -1,0 +1,41 @@
+.info {
+    font-family: 'Roboto'sans-serif;
+    margin-bottom: 95px;
+
+    &__inner {
+        margin-top: 106px;
+        @include Flex;
+    }
+
+    &__desc {
+        margin-top: 33px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        &-text {
+            width: 445px;
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+        }
+
+        &-more {
+            color: $primaryBG;
+            margin-top: 10px;
+            font-size: 17px;
+            line-height: 140%;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__item-img{
+        width: 445px;
+        height: 311px;  
+    }
+}

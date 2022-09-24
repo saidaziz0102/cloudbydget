@@ -1,0 +1,53 @@
+.contact {
+    height: 450px;
+    font-family: 'Roboto';
+
+    &__inner {
+        @include Flex;
+    }
+
+    &__desc {
+        margin-top: 185px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        &-text {
+            width: 445px;
+            margin-top: 70px;
+            font-size: 14px;
+            line-height: 140%;
+        }
+    }
+    &__info{
+        margin-top: 150px;
+        &-input{
+            padding: 21px 380px 20px 30px;
+          border-radius: 7px;
+          margin-bottom: 25px;
+          transition: .3s all linear;
+          &:focus{
+            outline: none;
+            border: 2px solid $primaryBG;
+            box-shadow:0 0 10px $primaryBG;
+          }
+        }
+        &-btn{
+            width: 160px;
+            height: 50px;
+            background-color: $primaryBG;
+            border: 2px solid transparent;
+            color: $backgroundBG;
+            border-radius: 7px;
+            &:hover{
+                background-color: $backgroundBG;
+                border: 2px solid $primaryBG;
+                color: $primaryBG;
+            }
+        }
+    }
+
+}

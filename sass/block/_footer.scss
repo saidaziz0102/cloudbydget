@@ -1,0 +1,21 @@
+.footer {
+    font-family: 'Lato'sans-serif;
+    height: 245px;
+    background-color: $textcolorBG;
+
+    &__adress {
+        padding-top: 43px;
+
+        &-title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &-text{
+            margin-top: 19px;
+        }
+        &-end{
+            margin-top: 45px;
+        }
+    }
+}

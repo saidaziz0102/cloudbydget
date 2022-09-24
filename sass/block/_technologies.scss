@@ -1,0 +1,57 @@
+.technologies {
+    height: 400px;
+    font-family: 'Roboto'sans-serif;
+
+    &__wrapper {
+        &-title {
+            margin-top: 63px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        &-inner {
+            margin-top: 50px;
+            @include Flex;
+        }
+    }
+
+    &__item {
+        padding-top: 40px;
+        position: relative;
+        width: 225px;
+        height: 226px;
+        text-align: center;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        transition: .3s all linear;
+        &:hover{
+            border-left: 2px solid $textcolorBG;
+            border-right: 2px solid $textcolorBG;
+        }
+
+        &-info {
+            position: absolute;
+            top: 90px;
+            left: 23px;
+        }
+
+        &-icon {
+            font-size: 45px;
+            color: $primaryBG;
+        }
+
+        &-title {
+            margin-top: 19px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &-text{
+            margin-top: 11px;
+            font-size: 14px;
+        }
+
+    }
+}
